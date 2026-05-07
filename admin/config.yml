@@ -13,14 +13,9 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Título", name: "title", widget: "string" }
-      - label: "Categoría"
+      - { label: "Titulo", name: "title", widget: "string" }
+      - label: "Categoria"
         name: "categoria"
         widget: "select"
         options:
-          - { label: "Póster", value: "poster" }
-          - { label: "Vinilo / Álbum", value: "vinilo" }
-          - { label: "Branding", value: "branding" }
-          - { label: "Web", value: "web" }
-      - { label: "Imagen", name: "imagen", widget: "image" }
-      - { label: "Descripción corta", name: "descripc
+          - { label: "Poster
