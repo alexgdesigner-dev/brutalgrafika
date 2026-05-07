@@ -18,4 +18,11 @@ collections:
         name: "categoria"
         widget: "select"
         options:
-          - { label: "Poster
+          - { label: "Poster", value: "poster" }
+          - { label: "Vinilo", value: "vinilo" }
+          - { label: "Branding", value: "branding" }
+          - { label: "Web", value: "web" }
+      - { label: "Imagen", name: "imagen", widget: "image" }
+      - { label: "Descripcion", name: "descripcion", widget: "string", required: false }
+      - { label: "Ciudad", name: "ciudad", widget: "string", default: "CDMX" }
+      - { label: "Anio", name: "anio", widget: "string", default: "2026" }
