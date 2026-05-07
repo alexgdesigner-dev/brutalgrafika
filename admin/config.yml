@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: alexgdesigner-dev/brutalgrafika
   branch: main
 
 media_folder: "images"
@@ -22,6 +23,4 @@ collections:
           - { label: "Branding", value: "branding" }
           - { label: "Web", value: "web" }
       - { label: "Imagen", name: "imagen", widget: "image" }
-      - { label: "Descripción corta", name: "descripcion", widget: "string", required: false }
-      - { label: "Ciudad", name: "ciudad", widget: "string", default: "CDMX" }
-      - { label: "Año", name: "anio", widget: "string", default: "2026" }
+      - { label: "Descripción corta", name: "descripc
