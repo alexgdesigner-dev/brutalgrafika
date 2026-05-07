@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: alexgdesigner-dev/brutalgrafika
+  name: git-gateway
   branch: main
 
 media_folder: "images"
