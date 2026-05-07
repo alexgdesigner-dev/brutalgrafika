@@ -1,0 +1,28 @@
+backend:
+  name: github
+  repo: alexgdesigner-dev/brutalgrafika
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "portfolio"
+    label: "Portfolio"
+    folder: "_proyectos"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - label: "Categoría"
+        name: "categoria"
+        widget: "select"
+        options:
+          - { label: "Póster", value: "poster" }
+          - { label: "Vinilo / Álbum", value: "vinilo" }
+          - { label: "Branding", value: "branding" }
+          - { label: "Web", value: "web" }
+      - { label: "Imagen", name: "imagen", widget: "image" }
+      - { label: "Descripción corta", name: "descripcion", widget: "string", required: false }
+      - { label: "Ciudad", name: "ciudad", widget: "string", default: "CDMX" }
+      - { label: "Año", name: "anio", widget: "string", default: "2026" }
